@@ -20,7 +20,7 @@ public class TestConnection {
 					return true;
 				} else if (hostname.equals("203.150.62.191")) {
 					return true;
-				} else if (hostname.equals("192.168.243.129")) {
+				} else if (hostname.equals("192.168.243.146")) {
 					return true;
 				} else {
 					return false;
@@ -42,13 +42,13 @@ public class TestConnection {
 //		final String ACCOUNT = "test002@test.thaiairways.com";
 //		final String PASSWORD = "Acho20mkr";
 		
-		final String WEB_MAIL_URL = "https://203.150.62.191/service/soap";
-		final String ACCOUNT = "test002@mgt.com";
-		final String PASSWORD = "Acho20mkr";
-//		
-//		final String WEB_MAIL_URL = "https://192.168.243.129/service/soap";
-//		final String ACCOUNT = "pepsi3@mgt.com";
+//		final String WEB_MAIL_URL = "https://203.150.62.191/service/soap";
+//		final String ACCOUNT = "test002@mgt.com";
 //		final String PASSWORD = "Acho20mkr";
+//		
+		final String WEB_MAIL_URL = "https://192.168.243.146/service/soap";
+		final String ACCOUNT = "pepsi3@mgt.com";
+		final String PASSWORD = "Acho20mkr";
 
 		try {
 			URL url = new URL(WEB_MAIL_URL);

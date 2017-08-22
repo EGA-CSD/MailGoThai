@@ -22,7 +22,7 @@ public class ProvisioningAppointment {
 					return true;
 				} else if (hostname.equals("203.150.62.191")) {
 					return true;
-				} else if (hostname.equals("192.168.243.129")) {
+				} else if (hostname.equals("192.168.243.146")) {
 					return true;
 				} else {
 					return false;
@@ -109,8 +109,8 @@ public class ProvisioningAppointment {
 //		final String PREAUTH_KEY = "105ef8fb544dfd45bf2c770554aa42992f741285d20873316984cb8ee9afd4e5";
 //		final String ACCOUNT = "user01@test.thaiairways.com";
 		
-		final String WEB_MAIL_URL = "https://192.168.243.129/service/soap";
-		final String PREAUTH_KEY = "a2e7b7c513e2472c49d83d9b62598c6f2c3c966abe823d0b989105c92781a536";
+		final String WEB_MAIL_URL = "https://192.168.243.146/service/soap";
+		final String PREAUTH_KEY = "645870e43919374eb6495b94feb504ac85723d7f6742c56cdb3947a9beaba333";
 		final String ACCOUNT = "admin@mail.centos7.lan";
 		final String PASSWORD = "Acho20mkr";
 
