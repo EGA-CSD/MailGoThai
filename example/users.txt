@@ -1,0 +1,3 @@
+admin@mail.centos7.lan
+pepsi3@mail.centos7.lan
+pepsi2@mail.centos7.lan

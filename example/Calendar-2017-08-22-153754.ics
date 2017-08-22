@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:Calendar
+X-WR-CALID:4721dbe9-2af2-4889-b4c4-6b3e976500bc:10
+PRODID:Zimbra-Calendar-Provider
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETTO:+0700
+TZOFFSETFROM:+0700
+TZNAME:ICT
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8df0c882-3f4d-4d3c-b02d-5b60ca2f6fe1
+SUMMARY:Test Appointment Creation 1
+DESCRIPTION:Test Appointment Creation \n
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns="urn:zimbraMail"><body id="htmlmode
+ "><div style="font-fami  ly: arial\, helvetica\, sans-serif\; font-size: 12p
+ t\; color: #000000"><div>This Appointment has been created for testing Zimbr
+ a API</div></div></body></html>
+ORGANIZER;CN=pepsi3 pepsi3:mailto:pepsi3@mgt.com
+DTSTART;TZID="Asia/Bangkok":20170823T083000
+DTEND;TZID="Asia/Bangkok":20170823T090000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20170822T075434Z
+DTSTAMP:20170822T075434Z
+SEQUENCE:0
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8df0c882-3f4d-4d3c-b02d-5b60ca2f6fe2
+SUMMARY:Test Appointment Creation 2
+DESCRIPTION:Test Appointment Creation \n
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns="urn:zimbraMail"><body id="htmlmode
+ "><div style="font-fami  ly: arial\, helvetica\, sans-serif\; font-size: 12p
+ t\; color: #000000"><div>This Appointment has been created for testing Zimbr
+ a API</div></div></body></html>
+ORGANIZER;CN=pepsi3 pepsi3:mailto:pepsi3@mgt.com
+DTSTART;TZID="Asia/Bangkok":20170824T083000
+DTEND;TZID="Asia/Bangkok":20170824T090000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20170822T075434Z
+DTSTAMP:20170822T075434Z
+SEQUENCE:0
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8df0c882-3f4d-4d3c-b02d-5b60ca2f6fe3
+SUMMARY:Test Appointment Creation 3
+DESCRIPTION:Test Appointment Creation \n
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns="urn:zimbraMail"><body id="htmlmode
+ "><div style="font-fami  ly: arial\, helvetica\, sans-serif\; font-size: 12p
+ t\; color: #000000"><div>This Appointment has been created for testing Zimbr
+ a API</div></div></body></html>
+ORGANIZER;CN=pepsi3 pepsi3:mailto:pepsi3@mgt.com
+DTSTART;TZID="Asia/Bangkok":20170825T083000
+DTEND;TZID="Asia/Bangkok":20170825T090000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20170822T075434Z
+DTSTAMP:20170822T075434Z
+SEQUENCE:0
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
