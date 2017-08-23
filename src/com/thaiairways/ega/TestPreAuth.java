@@ -22,7 +22,7 @@ public class TestPreAuth {
 					return true;
 				} else if (hostname.equals("203.150.62.191")) {
 					return true;
-				} else if (hostname.equals("192.168.243.129")) {
+				} else if (hostname.equals("192.168.243.149")) {
 					return true;
 				} else {
 					return false;
@@ -40,13 +40,13 @@ public class TestPreAuth {
 //		final String PREAUTH_KEY = "105ef8fb544dfd45bf2c770554aa42992f741285d20873316984cb8ee9afd4e5";
 //		final String ACCOUNT = "test002@test.thaiairways.com";
 		
-		final String WEB_MAIL_URL = "https://203.150.62.191/service/soap";
-		final String PREAUTH_KEY = "c51dea711e61820f47f55cf77292062470062b83ff62ac34df63663ad6e9920a";
-		final String ACCOUNT = "test002@mgt.com";
+//		final String WEB_MAIL_URL = "https://203.150.62.191/service/soap";
+//		final String PREAUTH_KEY = "c51dea711e61820f47f55cf77292062470062b83ff62ac34df63663ad6e9920a";
+//		final String ACCOUNT = "test002@mgt.com";
 	
-//		final String WEB_MAIL_URL = "https://192.168.243.129/service/soap";
-//		final String PREAUTH_KEY = "645870e43919374eb6495b94feb504ac85723d7f6742c56cdb3947a9beaba333";
-//		final String ACCOUNT = "pepsi2@mail.centos7.lan";
+		final String WEB_MAIL_URL = "https://192.168.243.149/service/soap";
+		final String PREAUTH_KEY = "645870e43919374eb6495b94feb504ac85723d7f6742c56cdb3947a9beaba333";
+		final String ACCOUNT = "admin@mail.centos7.lan";
 
 		String preauthValue = "";
 
@@ -57,6 +57,7 @@ public class TestPreAuth {
 		params.put("timestamp", ts);
 		params.put("expires", "0");
 		preauthValue = PreAuth.computePreAuth(params, PREAUTH_KEY);
+		
 		System.out.println("timestamp: "+ts);
 		System.out.printf("PreAuthen: %s\n", preauthValue	);
 		System.out.println("Url: "+WEB_MAIL_URL.split("soap")[0]+"preauth?account="+ACCOUNT+"&expires=0&timestamp="+ts+"&preauth="+preauthValue);
@@ -64,7 +65,7 @@ public class TestPreAuth {
 			URL url = new URL(WEB_MAIL_URL);
 			URLConnection connection = url.openConnection();
 			HttpURLConnection httpConn = (HttpURLConnection) connection;
-
+			
 			String xmlInput = "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\">" 
 							+ "<soap:Header>"
 							+ "<context xmlns=\"urn:zimbra\"/>" 
@@ -78,7 +79,7 @@ public class TestPreAuth {
 							+ "</soap:Envelope>";
 
 			httpConn.setRequestProperty("Content-Length", String.valueOf(xmlInput.length()));
-			httpConn.setRequestProperty("Content-Type", "application/soapxml");
+			httpConn.setRequestProperty("Content-Type", "application/soap+xml; charset=utf-8");
 			httpConn.setRequestMethod("POST");
 			httpConn.setDoOutput(true);
 			httpConn.setDoInput(true);
@@ -100,6 +101,7 @@ public class TestPreAuth {
 				e.printStackTrace();
 			}
 
+			
 			InputStreamReader isr = new InputStreamReader(httpConn.getInputStream());
 			BufferedReader in = new BufferedReader(isr);
 
@@ -111,7 +113,7 @@ public class TestPreAuth {
 				System.out.println("Reading");
 				response = response + readBuffer;
 			}
-			
+				
 			System.out.println("Response :"+response);
 			String authToken = response.split("<authToken>")[1].split("</authToken>")[0];
 			System.out.println("Token : "+ authToken);
