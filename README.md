@@ -1,4 +1,4 @@
-# MailGoThai
+# MailGoThai-ZimbraAPI
 
 ## Prerequisite Software
  - Virsual Machine(In case of simulation)
