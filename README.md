@@ -16,4 +16,7 @@
      ```
 ## Utility
   - [Generate PreAuth key](https://wiki.zimbra.com/wiki/Preauth)
+  
+## Reference
+  - https://confluence.atlassian.com/kb/unable-to-connect-to-ssl-services-due-to-pkix-path-building-failed-779355358.html
  
